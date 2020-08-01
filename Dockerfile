@@ -1,6 +1,6 @@
 FROM golang:1.11-alpine
 
-MAINTAINER TFG Co <backend@tfgco.com>
+MAINTAINER João Pedro Holanda <joao.holanda@wildlifestudios.com>
 
 EXPOSE 80
 
@@ -12,11 +12,11 @@ RUN go get -u github.com/golang/dep/...
 RUN go get -u github.com/topfreegames/goose/cmd/goose
 
 ADD loadtest/words /usr/share/dict/words
-ADD . /go/src/github.com/topfreegames/khan
+ADD . /go/src/github.com/jpholanda/khan
 
-WORKDIR /go/src/github.com/topfreegames/khan
+WORKDIR /go/src/github.com/jpholanda/khan
 RUN dep ensure
-RUN go install github.com/topfreegames/khan
+RUN go install github.com/jpholanda/khan
 
 ENV KHAN_POSTGRES_HOST 0.0.0.0
 ENV KHAN_POSTGRES_PORT 5432
@@ -44,4 +44,4 @@ ENV KHAN_BASICAUTH_PASSWORD ""
 
 ENV KHAN_RUN_WORKER ""
 
-CMD /bin/bash -c 'if [ "$KHAN_RUN_WORKER" != "true" ]; then /go/bin/khan start --bind 0.0.0.0 --port 80 --fast --config /go/src/github.com/topfreegames/khan/config/default.yaml; else /go/bin/khan worker --config /go/src/github.com/topfreegames/khan/config/default.yaml; fi'
+CMD /bin/bash -c 'if [ "$KHAN_RUN_WORKER" != "true" ]; then /go/bin/khan start --bind 0.0.0.0 --port 80 --fast --config /go/src/github.com/jpholanda/khan/config/default.yaml; else /go/bin/khan worker --config /go/src/github.com/jpholanda/khan/config/default.yaml; fi'
