@@ -1,5 +1,5 @@
 // khan
-// https://github.com/topfreegames/khan
+// https://github.com/jpholanda/khan
 //
 // Licensed under the MIT license:
 // http://www.opensource.org/licenses/mit-license
@@ -18,7 +18,7 @@ import (
 	"github.com/spf13/viper"
 	"github.com/topfreegames/extensions/mongo"
 	"github.com/topfreegames/extensions/mongo/interfaces"
-	"github.com/topfreegames/khan/models"
+	"github.com/jpholanda/khan/models"
 )
 
 func getTestMongo() (interfaces.MongoDB, error) {

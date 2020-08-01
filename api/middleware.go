@@ -1,5 +1,5 @@
 // khan
-// https://github.com/topfreegames/khan
+// https://github.com/jpholanda/khan
 //
 // Licensed under the MIT license:
 // http://www.opensource.org/licenses/mit-license
@@ -17,8 +17,8 @@ import (
 
 	"github.com/getsentry/raven-go"
 	"github.com/labstack/echo"
-	"github.com/topfreegames/khan/log"
-	"github.com/topfreegames/khan/util"
+	"github.com/jpholanda/khan/log"
+	"github.com/jpholanda/khan/util"
 	"github.com/uber-go/zap"
 )
 

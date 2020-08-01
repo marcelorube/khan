@@ -1,5 +1,5 @@
 // khan
-// https://github.com/topfreegames/khan
+// https://github.com/jpholanda/khan
 //
 // Licensed under the MIT license:
 // http://www.opensource.org/licenses/mit-license
@@ -18,8 +18,8 @@ import (
 	"github.com/spf13/viper"
 	"github.com/topfreegames/extensions/gorp"
 	"github.com/topfreegames/goose/lib/goose"
-	"github.com/topfreegames/khan/db"
-	"github.com/topfreegames/khan/models"
+	"github.com/jpholanda/khan/db"
+	"github.com/jpholanda/khan/models"
 )
 
 var migrationVersion int64

@@ -1,5 +1,5 @@
 // khan
-// https://github.com/topfreegames/khan
+// https://github.com/jpholanda/khan
 //
 // Licensed under the MIT license:
 // http://www.opensource.org/licenses/mit-license
@@ -9,8 +9,8 @@ package cmd
 
 import (
 	"github.com/spf13/cobra"
-	"github.com/topfreegames/khan/api"
-	"github.com/topfreegames/khan/log"
+	"github.com/jpholanda/khan/api"
+	"github.com/jpholanda/khan/log"
 	"github.com/uber-go/zap"
 )
 

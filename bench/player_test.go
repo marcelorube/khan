@@ -1,5 +1,5 @@
 // khan
-// https://github.com/topfreegames/khan
+// https://github.com/jpholanda/khan
 //
 // Licensed under the MIT license:
 // http://www.opensource.org/licenses/mit-license
@@ -13,7 +13,7 @@ import (
 	"testing"
 
 	"github.com/satori/go.uuid"
-	"github.com/topfreegames/khan/models"
+	"github.com/jpholanda/khan/models"
 )
 
 var playerResult *http.Response

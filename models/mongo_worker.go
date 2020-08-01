@@ -9,7 +9,7 @@ import (
 	"github.com/spf13/viper"
 	"github.com/topfreegames/extensions/mongo/interfaces"
 	"github.com/topfreegames/extensions/tracing"
-	"github.com/topfreegames/khan/mongo"
+	"github.com/jpholanda/khan/mongo"
 	"github.com/uber-go/zap"
 )
 

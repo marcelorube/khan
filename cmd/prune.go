@@ -1,5 +1,5 @@
 // khan
-// https://github.com/topfreegames/khan
+// https://github.com/jpholanda/khan
 //
 // Licensed under the MIT license:
 // http://www.opensource.org/licenses/mit-license
@@ -14,9 +14,9 @@ import (
 	raven "github.com/getsentry/raven-go"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"github.com/topfreegames/khan/log"
-	"github.com/topfreegames/khan/models"
-	"github.com/topfreegames/khan/util"
+	"github.com/jpholanda/khan/log"
+	"github.com/jpholanda/khan/models"
+	"github.com/jpholanda/khan/util"
 	"github.com/uber-go/zap"
 )
 
@@ -134,7 +134,7 @@ func executePruning(debug, quiet bool) (*models.PruneStats, error) {
 		}
 
 		options := &models.PruneOptions{
-			GameID: game.PublicID,
+			GameID:                        game.PublicID,
 			PendingApplicationsExpiration: int(pendingApplicationsExpiration.(float64)),
 			PendingInvitesExpiration:      int(pendingInvitesExpiration.(float64)),
 			DeniedMembershipsExpiration:   int(deniedMembershipsExpiration.(float64)),

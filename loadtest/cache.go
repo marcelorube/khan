@@ -4,7 +4,7 @@ import (
 	"math/rand"
 
 	"github.com/spf13/viper"
-	"github.com/topfreegames/khan/lib"
+	"github.com/jpholanda/khan/lib"
 )
 
 type (

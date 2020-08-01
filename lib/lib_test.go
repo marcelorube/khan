@@ -3,7 +3,7 @@ package lib_test
 import (
 	"github.com/jarcoal/httpmock"
 	"github.com/spf13/viper"
-	"github.com/topfreegames/khan/lib"
+	"github.com/jpholanda/khan/lib"
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"

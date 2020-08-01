@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	gocache "github.com/patrickmn/go-cache"
-	"github.com/topfreegames/khan/models"
+	"github.com/jpholanda/khan/models"
 )
 
 // ClansSummaries represents a cache for the RetrieveClansSummaries operation.

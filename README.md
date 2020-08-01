@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/topfreegames/khan.svg?branch=master)](https://travis-ci.org/topfreegames/khan)
 [![Coverage Status](https://coveralls.io/repos/github/topfreegames/khan/badge.svg?branch=master)](https://coveralls.io/github/topfreegames/khan?branch=master)
 [![Code Climate](https://codeclimate.com/github/topfreegames/khan/badges/gpa.svg)](https://codeclimate.com/github/topfreegames/khan)
-[![Go Report Card](https://goreportcard.com/badge/github.com/topfreegames/khan)](https://goreportcard.com/report/github.com/topfreegames/khan)
+[![Go Report Card](https://goreportcard.com/badge/github.com/jpholanda/khan)](https://goreportcard.com/report/github.com/jpholanda/khan)
 [![Docs](https://readthedocs.org/projects/khan-api/badge/?version=latest
 )](http://khan-api.readthedocs.io/en/latest/)
 [![](https://imagelayers.io/badge/tfgco/khan:latest.svg)](https://imagelayers.io/?images=tfgco/khan:latest 'Khan Image Layers')

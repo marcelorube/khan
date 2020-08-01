@@ -3,7 +3,7 @@ package loadtest
 import (
 	"fmt"
 
-	"github.com/topfreegames/khan/lib"
+	"github.com/jpholanda/khan/lib"
 )
 
 func (app *App) configureClanOperations() {

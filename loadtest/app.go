@@ -8,8 +8,8 @@ import (
 	"time"
 
 	"github.com/spf13/viper"
-	"github.com/topfreegames/khan/lib"
-	"github.com/topfreegames/khan/log"
+	"github.com/jpholanda/khan/lib"
+	"github.com/jpholanda/khan/log"
 	"github.com/uber-go/zap"
 )
 

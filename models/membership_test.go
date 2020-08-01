@@ -1,5 +1,5 @@
 // khan
-// https://github.com/topfreegames/khan
+// https://github.com/jpholanda/khan
 //
 // Licensed under the MIT license:
 // http://www.opensource.org/licenses/mit-license
@@ -15,8 +15,8 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/satori/go.uuid"
-	. "github.com/topfreegames/khan/models"
-	"github.com/topfreegames/khan/util"
+	. "github.com/jpholanda/khan/models"
+	"github.com/jpholanda/khan/util"
 )
 
 var _ = Describe("Membership Model", func() {

@@ -12,9 +12,9 @@ import (
 	idb "github.com/topfreegames/extensions/gorp/interfaces"
 	mongoext "github.com/topfreegames/extensions/mongo"
 	imongo "github.com/topfreegames/extensions/mongo/interfaces"
-	"github.com/topfreegames/khan/log"
-	"github.com/topfreegames/khan/models"
-	"github.com/topfreegames/khan/mongo"
+	"github.com/jpholanda/khan/log"
+	"github.com/jpholanda/khan/models"
+	"github.com/jpholanda/khan/mongo"
 )
 
 var gameID string

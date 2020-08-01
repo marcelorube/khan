@@ -1,5 +1,5 @@
 // khan
-// https://github.com/topfreegames/khan
+// https://github.com/jpholanda/khan
 //
 // Licensed under the MIT license:
 // http://www.opensource.org/licenses/mit-license
@@ -39,13 +39,13 @@ import (
 	extnethttpmiddleware "github.com/topfreegames/extensions/middleware"
 	"github.com/topfreegames/extensions/mongo/interfaces"
 	extworkermiddleware "github.com/topfreegames/extensions/worker/middleware"
-	"github.com/topfreegames/khan/caches"
-	"github.com/topfreegames/khan/es"
-	"github.com/topfreegames/khan/log"
-	"github.com/topfreegames/khan/models"
-	"github.com/topfreegames/khan/mongo"
-	"github.com/topfreegames/khan/queues"
-	"github.com/topfreegames/khan/util"
+	"github.com/jpholanda/khan/caches"
+	"github.com/jpholanda/khan/es"
+	"github.com/jpholanda/khan/log"
+	"github.com/jpholanda/khan/models"
+	"github.com/jpholanda/khan/mongo"
+	"github.com/jpholanda/khan/queues"
+	"github.com/jpholanda/khan/util"
 	"github.com/uber-go/zap"
 	"github.com/valyala/fasthttp/fasthttpadaptor"
 )

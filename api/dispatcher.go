@@ -1,5 +1,5 @@
 // khan
-// https://github.com/topfreegames/khan
+// https://github.com/jpholanda/khan
 //
 // Licensed under the MIT license:
 // http://www.opensource.org/licenses/mit-license
@@ -27,8 +27,8 @@ import (
 	"github.com/satori/go.uuid"
 	ehttp "github.com/topfreegames/extensions/http"
 	"github.com/topfreegames/extensions/tracing"
-	"github.com/topfreegames/khan/log"
-	"github.com/topfreegames/khan/queues"
+	"github.com/jpholanda/khan/log"
+	"github.com/jpholanda/khan/queues"
 	"github.com/uber-go/zap"
 	"github.com/valyala/fasttemplate"
 )

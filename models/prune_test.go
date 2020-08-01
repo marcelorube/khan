@@ -1,5 +1,5 @@
 // khan
-// https://github.com/topfreegames/khan
+// https://github.com/jpholanda/khan
 //
 // Licensed under the MIT license:
 // http://www.opensource.org/licenses/mit-license
@@ -12,7 +12,7 @@ import (
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	. "github.com/topfreegames/khan/models"
+	. "github.com/jpholanda/khan/models"
 	"github.com/uber-go/zap"
 )
 
@@ -39,7 +39,7 @@ var _ = Describe("Prune Stale Data Model", func() {
 
 				expiration := int((2 * time.Hour).Seconds())
 				options := &PruneOptions{
-					GameID: gameID,
+					GameID:                        gameID,
 					PendingApplicationsExpiration: expiration,
 					PendingInvitesExpiration:      expiration,
 					DeniedMembershipsExpiration:   expiration,

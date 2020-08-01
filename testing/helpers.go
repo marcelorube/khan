@@ -3,12 +3,12 @@ package testing
 import (
 	"time"
 
-	"github.com/topfreegames/khan/caches"
+	"github.com/jpholanda/khan/caches"
 
 	gocache "github.com/patrickmn/go-cache"
 	"github.com/topfreegames/extensions/mongo/interfaces"
-	"github.com/topfreegames/khan/models"
-	"github.com/topfreegames/khan/mongo"
+	"github.com/jpholanda/khan/models"
+	"github.com/jpholanda/khan/mongo"
 )
 
 // CreateClanNameTextIndexInMongo creates the necessary text index for clan search in mongo

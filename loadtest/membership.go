@@ -1,7 +1,7 @@
 package loadtest
 
 import (
-	"github.com/topfreegames/khan/lib"
+	"github.com/jpholanda/khan/lib"
 )
 
 func (app *App) configureMembershipOperations() {

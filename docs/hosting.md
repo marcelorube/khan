@@ -49,9 +49,9 @@ In order to run Khan's workers using docker you just need to send the `KHAN_RUN_
 
 Whenever we publish a new version of Khan, we'll always supply binaries for both Linux and Darwin, on i386 and x86_64 architectures. If you'd rather run your own servers instead of containers, just use the binaries that match your platform and architecture.
 
-The API server is the `khan` binary. It takes a configuration yaml file that specifies the connection to PostgreSQL and some additional parameters. You can learn more about it at [default.yaml](https://github.com/topfreegames/khan/blob/master/config/default.yaml).
+The API server is the `khan` binary. It takes a configuration yaml file that specifies the connection to PostgreSQL and some additional parameters. You can learn more about it at [default.yaml](https://github.com/jpholanda/khan/blob/master/config/default.yaml).
 
-The workers can be started using the same `khan` binary. It takes a configuration yaml file that specifies the connection to PostgreSQL and some additional parameters. You can learn more about it at [default.yaml](https://github.com/topfreegames/khan/blob/master/config/default.yaml).
+The workers can be started using the same `khan` binary. It takes a configuration yaml file that specifies the connection to PostgreSQL and some additional parameters. You can learn more about it at [default.yaml](https://github.com/jpholanda/khan/blob/master/config/default.yaml).
 
 ## Source
 

@@ -1,5 +1,5 @@
 -- khan
--- https://github.com/topfreegames/khan
+-- https://github.com/jpholanda/khan
 --
 -- Licensed under the MIT license:
 -- http://www.opensource.org/licenses/mit-license

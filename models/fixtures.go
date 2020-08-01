@@ -1,5 +1,5 @@
 // khan
-// https://github.com/topfreegames/khan
+// https://github.com/jpholanda/khan
 //
 // Licensed under the MIT license:
 // http://www.opensource.org/licenses/mit-license
@@ -15,7 +15,7 @@ import (
 	"github.com/Pallinder/go-randomdata"
 	"github.com/bluele/factory-go/factory"
 	uuid "github.com/satori/go.uuid"
-	"github.com/topfreegames/khan/util"
+	"github.com/jpholanda/khan/util"
 )
 
 // GameFactory is responsible for constructing test game instances

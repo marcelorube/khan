@@ -1,5 +1,5 @@
 // khan
-// https://github.com/topfreegames/khan
+// https://github.com/jpholanda/khan
 //
 // Licensed under the MIT license:
 // http://www.opensource.org/licenses/mit-license
@@ -9,7 +9,7 @@ package models_test
 
 import (
 	"fmt"
-	"github.com/topfreegames/khan/lib"
+	"github.com/jpholanda/khan/lib"
 	"sort"
 	"strings"
 	"time"
@@ -19,10 +19,10 @@ import (
 	uuid "github.com/satori/go.uuid"
 	"github.com/spf13/viper"
 	"github.com/topfreegames/extensions/mongo/interfaces"
-	"github.com/topfreegames/khan/api"
-	. "github.com/topfreegames/khan/models"
-	"github.com/topfreegames/khan/testing"
-	"github.com/topfreegames/khan/util"
+	"github.com/jpholanda/khan/api"
+	. "github.com/jpholanda/khan/models"
+	"github.com/jpholanda/khan/testing"
+	"github.com/jpholanda/khan/util"
 
 	"github.com/Pallinder/go-randomdata"
 )
@@ -1088,31 +1088,41 @@ var _ = Describe("Clan Model", func() {
 			It("Should return clan by search term", func() {
 				err := testing.CreateClanNameTextIndexInMongo(GetTestMongo, player.GameID)
 				Expect(err).NotTo(HaveOccurred())
-				Eventually(func() ([]Clan, error) { return SearchClan(testDb, testMongo, player.GameID, "SEARCH", 10, lib.SearchMethodText) }).Should(HaveLen(10))
+				Eventually(func() ([]Clan, error) {
+					return SearchClan(testDb, testMongo, player.GameID, "SEARCH", 10, lib.SearchMethodText)
+				}).Should(HaveLen(10))
 			})
 
 			It("Should return clan by unicode search term", func() {
 				err := testing.CreateClanNameTextIndexInMongo(GetTestMongo, player.GameID)
 				Expect(err).NotTo(HaveOccurred())
-				Eventually(func() ([]Clan, error) { return SearchClan(testDb, testMongo, player.GameID, "💩clán", 10, lib.SearchMethodText) }).Should(HaveLen(10))
+				Eventually(func() ([]Clan, error) {
+					return SearchClan(testDb, testMongo, player.GameID, "💩clán", 10, lib.SearchMethodText)
+				}).Should(HaveLen(10))
 			})
 
 			It("Should return clan by full public ID as search term", func() {
 				searchClanID := realClans[0].PublicID
-				Eventually(func() ([]Clan, error) { return SearchClan(testDb, testMongo, player.GameID, searchClanID, 10, lib.SearchMethodText) }).Should(HaveLen(1))
+				Eventually(func() ([]Clan, error) {
+					return SearchClan(testDb, testMongo, player.GameID, searchClanID, 10, lib.SearchMethodText)
+				}).Should(HaveLen(1))
 			})
 
 			It("Should return clan by short public ID as search term", func() {
 				dbClan, err := GetTestClanWithRandomPublicIDAndName(testDb, player.GameID, player.ID)
 				Expect(err).NotTo(HaveOccurred())
 				searchClanID := dbClan.PublicID[:8]
-				Eventually(func() ([]Clan, error) { return SearchClan(testDb, testMongo, player.GameID, searchClanID, 10, lib.SearchMethodText) }).Should(HaveLen(1))
+				Eventually(func() ([]Clan, error) {
+					return SearchClan(testDb, testMongo, player.GameID, searchClanID, 10, lib.SearchMethodText)
+				}).Should(HaveLen(1))
 			})
 
 			It("Should return empty list if search term is not found", func() {
 				err := testing.CreateClanNameTextIndexInMongo(GetTestMongo, player.GameID)
 				Expect(err).NotTo(HaveOccurred())
-				Eventually(func() ([]Clan, error) { return SearchClan(testDb, testMongo, player.GameID, "qwfjur", 10, lib.SearchMethodText) }).Should(HaveLen(0))
+				Eventually(func() ([]Clan, error) {
+					return SearchClan(testDb, testMongo, player.GameID, "qwfjur", 10, lib.SearchMethodText)
+				}).Should(HaveLen(0))
 			})
 
 			It("Should return invalid response if empty term", func() {

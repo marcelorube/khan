@@ -7,7 +7,7 @@ import (
 
 	newrelic "github.com/newrelic/go-agent"
 	eelastic "github.com/topfreegames/extensions/elastic"
-	"github.com/topfreegames/khan/log"
+	"github.com/jpholanda/khan/log"
 	"github.com/uber-go/zap"
 	"gopkg.in/olivere/elastic.v5"
 )

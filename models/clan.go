@@ -1,5 +1,5 @@
 // khan
-// https://github.com/topfreegames/khan
+// https://github.com/jpholanda/khan
 //
 // Licensed under the MIT license:
 // http://www.opensource.org/licenses/mit-license
@@ -13,7 +13,7 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"github.com/topfreegames/khan/lib"
+	"github.com/jpholanda/khan/lib"
 	"os"
 	"strings"
 
@@ -25,10 +25,10 @@ import (
 	"github.com/mailru/easyjson/jlexer"
 	"github.com/mailru/easyjson/jwriter"
 	"github.com/topfreegames/extensions/mongo/interfaces"
-	"github.com/topfreegames/khan/es"
-	"github.com/topfreegames/khan/mongo"
-	"github.com/topfreegames/khan/queues"
-	"github.com/topfreegames/khan/util"
+	"github.com/jpholanda/khan/es"
+	"github.com/jpholanda/khan/mongo"
+	"github.com/jpholanda/khan/queues"
+	"github.com/jpholanda/khan/util"
 	"github.com/uber-go/zap"
 )
 

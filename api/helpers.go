@@ -1,5 +1,5 @@
 // khan
-// https://github.com/topfreegames/khan
+// https://github.com/jpholanda/khan
 //
 // Licensed under the MIT license:
 // http://www.opensource.org/licenses/mit-license
@@ -22,8 +22,8 @@ import (
 	"github.com/mailru/easyjson/jlexer"
 	"github.com/mailru/easyjson/jwriter"
 	newrelic "github.com/newrelic/go-agent"
-	"github.com/topfreegames/khan/log"
-	"github.com/topfreegames/khan/models"
+	"github.com/jpholanda/khan/log"
+	"github.com/jpholanda/khan/models"
 	"github.com/uber-go/zap"
 )
 

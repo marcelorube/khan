@@ -1,1 +1,1 @@
-worker: /bin/bash -c '/go/bin/khan worker --config /go/src/github.com/topfreegames/khan/config/default.yaml'
+worker: /bin/bash -c '/go/bin/khan worker --config /go/src/github.com/jpholanda/khan/config/default.yaml'

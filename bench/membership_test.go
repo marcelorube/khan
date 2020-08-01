@@ -1,5 +1,5 @@
 // khan
-// https://github.com/topfreegames/khan
+// https://github.com/jpholanda/khan
 //
 // Licensed under the MIT license:
 // http://www.opensource.org/licenses/mit-license
@@ -12,7 +12,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/topfreegames/khan/models"
+	"github.com/jpholanda/khan/models"
 )
 
 var membershipResult *http.Response

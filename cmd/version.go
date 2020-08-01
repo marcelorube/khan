@@ -1,5 +1,5 @@
 // khan
-// https://github.com/topfreegames/khan
+// https://github.com/jpholanda/khan
 //
 // Licensed under the MIT license:
 // http://www.opensource.org/licenses/mit-license
@@ -11,7 +11,7 @@ import (
 	"fmt"
 
 	"github.com/spf13/cobra"
-	"github.com/topfreegames/khan/util"
+	"github.com/jpholanda/khan/util"
 )
 
 // versionCmd represents the version command

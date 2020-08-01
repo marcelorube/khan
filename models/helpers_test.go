@@ -1,5 +1,5 @@
 // khan
-// https://github.com/topfreegames/khan
+// https://github.com/jpholanda/khan
 //
 // Licensed under the MIT license:
 // http://www.opensource.org/licenses/mit-license
@@ -15,10 +15,10 @@ import (
 	uuid "github.com/satori/go.uuid"
 	"github.com/spf13/viper"
 	"github.com/topfreegames/extensions/mongo/interfaces"
-	"github.com/topfreegames/khan/models"
-	"github.com/topfreegames/khan/mongo"
-	"github.com/topfreegames/khan/queues"
-	kt "github.com/topfreegames/khan/testing"
+	"github.com/jpholanda/khan/models"
+	"github.com/jpholanda/khan/mongo"
+	"github.com/jpholanda/khan/queues"
+	kt "github.com/jpholanda/khan/testing"
 )
 
 // GetTestDB returns a connection to the test database

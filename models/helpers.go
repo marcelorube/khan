@@ -1,5 +1,5 @@
 // khan
-// https://github.com/topfreegames/khan
+// https://github.com/jpholanda/khan
 //
 // Licensed under the MIT license:
 // http://www.opensource.org/licenses/mit-license
@@ -15,7 +15,7 @@ import (
 	_ "github.com/lib/pq" //This is required to use postgres with database/sql
 	egorp "github.com/topfreegames/extensions/gorp"
 	"github.com/topfreegames/extensions/gorp/interfaces"
-	"github.com/topfreegames/khan/util"
+	"github.com/jpholanda/khan/util"
 )
 
 // DB is the contract for all the operations we use from either a connection or transaction

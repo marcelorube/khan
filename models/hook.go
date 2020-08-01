@@ -1,5 +1,5 @@
 // khan
-// https://github.com/topfreegames/khan
+// https://github.com/jpholanda/khan
 //
 // Licensed under the MIT license:
 // http://www.opensource.org/licenses/mit-license
@@ -9,7 +9,7 @@ package models
 
 import (
 	"github.com/satori/go.uuid"
-	"github.com/topfreegames/khan/util"
+	"github.com/jpholanda/khan/util"
 
 	"github.com/go-gorp/gorp"
 )

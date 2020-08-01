@@ -1,12 +1,12 @@
 # khan
-# https://github.com/topfreegames/khan
+# https://github.com/jpholanda/khan
 # Licensed under the MIT license:
 # http://www.opensource.org/licenses/mit-license
 # Copyright © 2016 Top Free Games <backend@tfgco.com>
 
 .PHONY: db
 
-GODIRS = $(shell go list ./... | grep -v /vendor/ | sed s@github.com/topfreegames/khan@.@g | egrep -v "^[.]$$")
+GODIRS = $(shell go list ./... | grep -v /vendor/ | sed s@github.com/jpholanda/khan@.@g | egrep -v "^[.]$$")
 PMD = "pmd-bin-5.3.3"
 OS = "$(shell uname | awk '{ print tolower($$0) }')"
 MYIP=`ifconfig | grep --color=none -Eo 'inet (addr:)?([0-9]*\.){3}[0-9]*' | grep --color=none -Eo '([0-9]*\.){3}[0-9]*' | grep -v '127.0.0.1' | head -n 1`
@@ -229,4 +229,4 @@ schema-clean:
 	@rm -rf ./models/*easyjson.go
 
 mock-lib:
-	@mockgen github.com/topfreegames/khan/lib KhanInterface | sed 's/mock_lib/mocks/' > lib/mocks/khan.go
+	@mockgen github.com/jpholanda/khan/lib KhanInterface | sed 's/mock_lib/mocks/' > lib/mocks/khan.go

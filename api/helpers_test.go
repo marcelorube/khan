@@ -1,5 +1,5 @@
 // khan
-// https://github.com/topfreegames/khan
+// https://github.com/jpholanda/khan
 //
 // Licensed under the MIT license:
 // http://www.opensource.org/licenses/mit-license
@@ -24,11 +24,11 @@ import (
 	"github.com/labstack/echo/engine/standard"
 	. "github.com/onsi/gomega"
 	"github.com/topfreegames/extensions/mongo/interfaces"
-	"github.com/topfreegames/khan/api"
-	"github.com/topfreegames/khan/es"
-	"github.com/topfreegames/khan/models"
-	"github.com/topfreegames/khan/mongo"
-	kt "github.com/topfreegames/khan/testing"
+	"github.com/jpholanda/khan/api"
+	"github.com/jpholanda/khan/es"
+	"github.com/jpholanda/khan/models"
+	"github.com/jpholanda/khan/mongo"
+	kt "github.com/jpholanda/khan/testing"
 )
 
 func GetTestES() *es.Client {

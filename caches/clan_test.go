@@ -6,8 +6,8 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	uuid "github.com/satori/go.uuid"
-	"github.com/topfreegames/khan/models"
-	"github.com/topfreegames/khan/testing"
+	"github.com/jpholanda/khan/models"
+	"github.com/jpholanda/khan/testing"
 )
 
 var _ = Describe("Clan Cache", func() {

@@ -1,5 +1,5 @@
 // khan
-// https://github.com/topfreegames/khan
+// https://github.com/jpholanda/khan
 //
 // Licensed under the MIT license:
 // http://www.opensource.org/licenses/mit-license
@@ -7,7 +7,7 @@
 
 package main
 
-import "github.com/topfreegames/khan/cmd"
+import "github.com/jpholanda/khan/cmd"
 
 func main() {
 	cmd.Execute(cmd.RootCmd)

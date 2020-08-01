@@ -2,8 +2,8 @@ package cmd
 
 import (
 	"github.com/spf13/cobra"
-	"github.com/topfreegames/khan/loadtest"
-	"github.com/topfreegames/khan/log"
+	"github.com/jpholanda/khan/loadtest"
+	"github.com/jpholanda/khan/log"
 	"github.com/uber-go/zap"
 )
 
