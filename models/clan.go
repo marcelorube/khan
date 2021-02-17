@@ -987,9 +987,11 @@ func SearchClan(
 
 	var filter interface{}
 	if searchMethod == lib.SearchMethodRegex {
-		escapedTerm := fmt.Sprintf(`^\Q%s\E`, term)
+		fmt.Printf("SEARCHING REGEX...")
+		escapedTerm := fmt.Sprintf(`%s`, term)
 		filter = bson.M{"name": bson.M{"$regex": escapedTerm}}
 	} else {
+		fmt.Printf("SEARCHING TEXT...")
 		filter = bson.M{"$text": bson.M{"$search": term}}
 	}
 
